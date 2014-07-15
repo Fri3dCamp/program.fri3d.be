@@ -1,0 +1,22 @@
+This repository contains the website for the program of Fri3d Camp 2014.
+
+It is built using HTML + Bootstrap and GitHub Pages and Jekyll. Bundler is
+required to generate and verify the site. See
+https://help.github.com/articles/using-jekyll-with-pages for help on setting up
+your environment.
+
+Fork, edit and provide me with a pull request and I'll push it online.
+
+Minimal survival instructions:
+$ git clone https://github.com/christophevg/program.fri3d.be
+$ cd program.fri3d.be
+$ bundle update
+
+Do some editing.
+
+$ bundle exec jekyll serve
+
+Check http://localhost:4000 to validate the site. Check all links! Twice!
+
+Christophe VG
+Team Content
