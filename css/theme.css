@@ -12,3 +12,31 @@ body {
 .theme-showcase > p > .btn {
   margin: 5px 0;
 }
+
+/* Time Schedule Styling */
+
+table.schedule {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.schedule, table.schedule th, table.schedule td {
+  border: 1px solid #dddddd;
+}
+
+table.schedule th, table.schedule td {
+  padding: 5px;
+}
+
+table.schedule th {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+table.schedule div.panel {
+  margin-bottom: 0px;
+}
+
+table.schedule div.panel-heading, table.schedule div.panel-body {
+  padding:5px;
+}
