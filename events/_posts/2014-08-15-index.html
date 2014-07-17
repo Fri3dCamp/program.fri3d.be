@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<a href="/">&laquo; show program</a><br>
+
+<h1>Fri3d Events</h1>
+
+{% assign sorted_events = site.categories["events"] | sort %}
+
+<ul>
+{% for event in sorted_events %}
+  {% if event.layout == "event" %} 
+  <li><a href="/events/{{ event.title | downcase | replace: " ", "_" }}.html">{{ event.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<a href="/">&laquo; show program</a><br>
+<a href="/speakers/">&laquo; all speakers</a><br>
+
+<h1>Fri3d Speaker: {{ page.name }}</h1>
+
+{{ page.bio }}
+
+<h2>Hosts</h2>
+
+<ul>
+{% for event in page.hosts %}
+  <li><a href="/events/{{ event | downcase | replace: " ", "_" }}.html">{{ event }}</a>
+{% endfor %}
+</ul>

@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<a href="/">&laquo; show program</a><br>
+<a href="/events/">&laquo; all events</a><br>
+
+<h1>Fri3d Event: {{ page.title }}</h1>
+
+{{ page.abstract }}<br><br>
+
+<strong>Hosted by</strong>: <a href="/speakers/{{ page.host | downcase | replace: " ", "_" }}.html">{{ page.host }}</a><br><br>
+
+<strong>Location</strong>: {{ page.location }}<br><br>
+
+<strong>Starts at</strong>: {{ page.start }}<br><br>
+
+<strong>Duration</strong>: {{ page.duration }}<br><br>
+
+<strong>Audience</strong>: {{ page.audience }}<br><br>
+

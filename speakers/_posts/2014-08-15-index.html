@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<a href="/">&laquo; show program</a><br>
+
+<h1>Fri3d Speakers</h1>
+
+{% assign sorted_speakers = site.categories["speakers"] | sort %}
+
+<ul>
+{% for speaker in sorted_speakers %}
+  {% if speaker.layout == "speaker" %} 
+  <li><a href="/speakers/{{ speaker.name | downcase | replace: " ", "_" }}.html">{{ speaker.name }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
