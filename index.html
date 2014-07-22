@@ -8,6 +8,11 @@ function show(day) {
   document.getElementById("sat").style.display = "none";
   document.getElementById("sun").style.display = "none";
   document.getElementById(day).style.display   = "block";
+
+  document.getElementById("nav-fri").className = "";
+  document.getElementById("nav-sat").className = "";
+  document.getElementById("nav-sun").className = "";
+  document.getElementById("nav-"+day).className = "active";
 }
 </script>
 
@@ -796,6 +801,7 @@ function show(day) {
 </div>
 
 <script>
+  document.getElementById("nav-fri").className = "active"; // default
   var day = location.hash
   if( day.length > 1 ) {
     day = day.substring(1);
