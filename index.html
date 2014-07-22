@@ -35,9 +35,9 @@ function show(day) {
 <h1 align="center">
   Fri 15
   &nbsp;|&nbsp; 
-  <a href="#" onclick="show('sat');">Sat 16</a>
+  <a href="#sat" onclick="show('sat');">Sat 16</a>
   &nbsp;|&nbsp;
-  <a href="#" onclick="show('sun');">Sun 17</a>
+  <a href="#sun" onclick="show('sun');">Sun 17</a>
 </h1>
 <br>
 
@@ -349,11 +349,11 @@ function show(day) {
 <div id="sat" style="display:none">
 
 <h1 align="center">
-  <a href="#" onclick="show('fri');">Fri 15</a>
+  <a href="#fri" onclick="show('fri');">Fri 15</a>
   &nbsp;|&nbsp;
   Sat 16
   &nbsp;|&nbsp;
-  <a href="#" onclick="show('sun');">Sun 17</a>
+  <a href="#sun" onclick="show('sun');">Sun 17</a>
 </h1>
 <br>
 
@@ -571,9 +571,9 @@ function show(day) {
 <div id="sun" style="display:none">
 
 <h1 align="center">
-  <a href="#" onclick="show('fri');">Fri 15</a>
+  <a href="#fri" onclick="show('fri');">Fri 15</a>
   &nbsp;|&nbsp;
-  <a href="#" onclick="show('sat');">Sat 16</a>
+  <a href="#sat" onclick="show('sat');">Sat 16</a>
   &nbsp;|&nbsp;
   Sun 17
 </h1>
@@ -795,3 +795,12 @@ function show(day) {
 
 </div>
 
+<script>
+  var day = location.hash
+  if( day.length > 1 ) {
+    day = day.substring(1);
+    if( ["fri", "sat", "sun"].indexOf(day) >= 0 ) {
+      show(day);
+    }
+  }
+</script>
