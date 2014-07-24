@@ -9,7 +9,12 @@ layout: base
 
 {{ page.abstract }}<br><br>
 
-<strong>Hosted by</strong>: <a href="/speakers/{{ page.host | downcase | replace: " ", "_" }}.html">{{ page.host }}</a><br><br>
+<strong>Hosted by</strong>:
+<a href="/speakers/{{ page.host | downcase | replace: " ", "_" }}.html">{{ page.host }}</a>
+{% if page.host2 %}
+and <a href="/speakers/{{ page.host2 | downcase | replace: " ", "_" }}.html">{{ page.host2 }}</a>
+{% endif %}
+<br><br>
 
 <strong>Location</strong>: {{ page.location }}<br><br>
 
