@@ -41,3 +41,9 @@ table.schedule div.panel {
 table.schedule div.panel-heading, table.schedule div.panel-body {
   padding:5px;
 }
+
+DIV.footer {
+  padding: 10px;
+  font-size: 9pt;
+  color: #aaaaaa;
+}
