@@ -13,6 +13,10 @@ body {
   margin: 5px 0;
 }
 
+h3.panel-title {
+  font-size: 14px;
+}
+
 /* Time Schedule Styling */
 
 table.schedule {
